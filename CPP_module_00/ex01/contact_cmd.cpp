@@ -8,27 +8,29 @@ Contact::Contact() {
 void	Contact::edit_contact(int i) {
 	index = i;
 	std::cout << "Index : " << index << std::endl;
+	std::getline(std::cin, first_name);
 
+	first_name = "";
 	while ( first_name.empty()){
 		std::cout << "First name : ";
-		std::getline(std::cin,first_name);
+		std::getline(std::cin, first_name);
 	}
-	
+	last_name = "";
 	while ( last_name.empty()){
 		std::cout << "Last name : ";
 		std::getline(std::cin, last_name);
 	}
-
+	nickname = "";
 	while ( nickname.empty()){
 		std::cout << "Nickname : ";
 		std::getline(std::cin, nickname);
 	}
-	
+	phone_number = "";
 	while ( phone_number.empty()){
 		std::cout << "Phone number : ";
 		std::getline(std::cin, phone_number);
 	}
-
+	darkest_secret = "";
 	while ( darkest_secret.empty()){
 		std::cout << "Darkest secret : ";
 		std::getline(std::cin, darkest_secret);

@@ -9,7 +9,7 @@ int main()
 
 	while (1)
 	{
-		std::cout << "Menu" << std::endl << "Commande : ADD / SEARCH / EXIT" << std::endl;
+		std::cout << "MENU" << std::endl << "Commande : ADD / SEARCH / EXIT" << std::endl;
 		std::cout << "Enter : ";
 		std::cin >> input;
 		if (input == "ADD")
@@ -23,6 +23,7 @@ int main()
 		}
 		else
 			std::cout << "Wrong input" << std::endl;
+		std::cout << std::endl;
 	}
 	return (0);
 }
